@@ -1,9 +1,5 @@
 {
   "dependencies": {
-    "apis1": {
-      "resourceId": "/subscriptions/[parameters('subscriptionId')]/resourceGroups/[parameters('resourceGroupName')]/providers/Microsoft.ApiManagement/service/EcoFarm/apis/EcoFarmApi",
-      "type": "apis.azure"
-    },
     "signalr1": {
       "serviceConnectorResourceId": "/subscriptions/[parameters('subscriptionId')]/resourceGroups/[parameters('resourceGroupName')]/providers/Microsoft.Web/sites/EcoFarmApi/providers/Microsoft.ServiceLinker/linkers/AzureSignalRConnectionString_566C480F5E",
       "secretStore": "AzureAppSettings",
@@ -11,6 +7,11 @@
       "type": "signalr.azure",
       "connectionId": "Azure:SignalR:ConnectionString",
       "dynamicId": null
+    },
+    "apis1": {
+      "apiEndpoint": "https://ecofarm.azure-api.net/",
+      "resourceId": "/subscriptions/[parameters('subscriptionId')]/resourceGroups/[parameters('resourceGroupName')]/providers/Microsoft.ApiManagement/service/EcoFarm/apis/EcoFarmApi",
+      "type": "apis.azure"
     }
   }
 }
